@@ -1,0 +1,209 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 20, ../sass/screen.scss */
+.slider .pagination-wrap {
+  color: #444;
+  margin: 80px auto;
+  max-width: 960px;
+  position: relative;
+  font-family: Arial;
+}
+/* line 26, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar {
+  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+  background: #f0f0f0;
+  border-radius: 15px;
+  height: 15px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+/* line 35, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li {
+  display: inline-block;
+  margin: 0 180px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 0;
+  color: #a3a3a3;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+/* line 47, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:hover .pagination-active-element:before {
+  color: #333;
+}
+/* line 52, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:before {
+  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+  height: 40px;
+  left: 40%;
+  position: absolute;
+  top: -28px;
+  width: 40px;
+  z-index: 99;
+  background: #f0f0f0;
+  border-radius: 50%;
+  content: " ";
+}
+/* line 66, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(1).active .pagination-active-element {
+  background: linear-gradient(to top, #2870c4, rgba(40, 112, 196, 0.7));
+  box-shadow: 0px -1px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+/* line 72, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(1) .pagination-active-element:before {
+  content: "1";
+}
+/* line 79, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(2).active .pagination-active-element {
+  background: linear-gradient(to top, #4bc9e5, rgba(75, 201, 229, 0.7));
+  box-shadow: 0px -1px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+/* line 85, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(2) .pagination-active-element:before {
+  content: "2";
+}
+/* line 92, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(3).active .pagination-active-element {
+  background: linear-gradient(to top, #47b616, rgba(71, 182, 22, 0.7));
+  box-shadow: 0px -1px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+/* line 98, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(3) .pagination-active-element:before {
+  content: "3";
+}
+/* line 105, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(4).active .pagination-active-element {
+  background: linear-gradient(to top, #ff7d00, rgba(255, 125, 0, 0.7));
+  box-shadow: 0px -1px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+/* line 111, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(4) .pagination-active-element:before {
+  content: "4";
+}
+/* line 118, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(5).active .pagination-active-element {
+  background: linear-gradient(to top, #e330a6, rgba(227, 48, 166, 0.7));
+  box-shadow: 0px -1px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+/* line 124, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(5) .pagination-active-element:before {
+  content: "5";
+}
+/* line 131, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(6).active .pagination-active-element {
+  background: linear-gradient(to top, #2870c4, rgba(40, 112, 196, 0.7));
+  box-shadow: 0px -1px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+/* line 137, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:nth-child(6) .pagination-active-element:before {
+  content: "6";
+}
+/* line 142, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li:last-child {
+  margin-right: 0;
+}
+/* line 146, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li.active .pagination-active-element {
+  background: linear-gradient(to top, #47b616, rgba(71, 182, 22, 0.7));
+  box-shadow: 0px -1px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+/* line 149, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li.active .pagination-active-element:before {
+  color: #fff;
+}
+/* line 154, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li .pagination-active-element {
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  position: absolute;
+  border-radius: 50%;
+  top: -23px;
+  z-index: 100;
+  left: 5px;
+}
+/* line 163, ../sass/screen.scss */
+.slider .pagination-wrap .pagination-bar li .pagination-active-element:before {
+  content: " ";
+  color: #a3a3a3;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 40px;
+  top: -4px;
+  left: 10px;
+  position: absolute;
+}
