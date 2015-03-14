@@ -12,8 +12,15 @@
 
 
 @mixin inner-shadow {
-  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, .2); box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, .2);
+  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(25,25,25, .2); box-shadow: inset 0px 2px 0px 0px rgba(25,25,25, .2);
 }
+@mixin inner-shadow-bar {
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(25,25,25, .2); box-shadow: inset 0px 2px 2px 0px rgba(25,25,25, .2);
+}
+@mixin inner-shadow-active-element {
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
 
 
 .slider {
@@ -24,7 +31,7 @@
     position: relative;
     font-family: Arial;
     .pagination-bar {
-      @include inner-shadow;
+      @include inner-shadow-bar;
       background: #f0f0f0;
       border-radius: 15px;
       height: 15px;
@@ -42,6 +49,7 @@
         font-size: 16px;
         font-weight: 600;
         position: relative;
+        cursor: pointer;
         &:hover {
           .pagination-active-element {
             &:before {
@@ -54,7 +62,7 @@
           height: 40px;
           left: 40%;
           position: absolute;
-          top: -28px;
+          top: -29px;
           width: 40px;
           z-index: 99;
           background: #f0f0f0;
@@ -65,7 +73,7 @@
           &.active {
             .pagination-active-element {
               background: linear-gradient(to top, rgba(40,112,196,1), rgba(40,112,196,0.7));
-              box-shadow: 0px -1px 0 0 rgba(0,0,0,0.4) inset;
+              @include inner-shadow-active-element;
             }
           }
           .pagination-active-element{
@@ -78,7 +86,7 @@
           &.active {
             .pagination-active-element {
               background: linear-gradient(to top, rgba(75,201,229,1), rgba(75,201,229,0.7));
-              box-shadow: 0px -1px 0 0 rgba(0,0,0,0.4) inset;
+              @include inner-shadow-active-element;
             }
           }
           .pagination-active-element{
@@ -91,7 +99,7 @@
           &.active {
             .pagination-active-element {
               background: linear-gradient(to top, rgba(71,182,22,1), rgba(71,182,22,0.7));
-              box-shadow: 0px -1px 0 0 rgba(0,0,0,0.4) inset;
+              @include inner-shadow-active-element;
             }
           }
           .pagination-active-element{
@@ -104,7 +112,7 @@
           &.active {
             .pagination-active-element {
               background: linear-gradient(to top, rgba(255,125,0,1), rgba(255,125,0,0.7));
-              box-shadow: 0px -1px 0 0 rgba(0,0,0,0.4) inset;
+              @include inner-shadow-active-element;
             }
           }
           .pagination-active-element{
@@ -117,7 +125,7 @@
           &.active {
             .pagination-active-element {
               background: linear-gradient(to top, rgba(227,48,166,1), rgba(227,48,166,0.7));
-              box-shadow: 0px -1px 0 0 rgba(0,0,0,0.4) inset;
+              @include inner-shadow-active-element;
             }
           }
           .pagination-active-element{
@@ -130,7 +138,7 @@
           &.active {
             .pagination-active-element {
               background: linear-gradient(to top, rgba(40,112,196,1), rgba(40,112,196,0.7));
-              box-shadow: 0px -1px 0 0 rgba(0,0,0,0.4) inset;
+              @include inner-shadow-active-element;
             }
           }
           .pagination-active-element{
@@ -145,21 +153,21 @@
         &.active {
           .pagination-active-element {
             background: linear-gradient(to top, rgba(71,182,22,1), rgba(71,182,22,0.7));
-            box-shadow: 0px -1px 0 0 rgba(0,0,0,0.4) inset;
+            @include inner-shadow-active-element;
             &:before {
               color: #fff;
             }
           }
         }
         .pagination-active-element {
-          height: 30px;
-          width: 30px;
+          height: 34px;
+          width: 34px;
           background: transparent;
           position: absolute;
           border-radius: 50%;
-          top: -23px;
+          top: -26px;
           z-index: 100;
-          left: 5px;
+          left: 3px;
           &:before {
             content: " ";
             color: #a3a3a3;
@@ -167,13 +175,36 @@
             font-weight: 400;
             text-align: center;
             line-height: 40px;
-            top: -4px;
-            left: 10px;
+            top: -3px;
+            left: 12px;
             position: absolute;
           }
         }
       }
     }
+  }
+  .arrow-btn {
+    position: absolute;
+    top: 150px;
+    width: 25px;
+    height: 70px;
+    font: 12pt arial,tahoma,sans-serif;
+    text-align: center;
+    &.left {
+      left:5px;
+    }
+    &.right {
+      right:5px;
+    }
+  }
+  #src {
+    margin:20px auto;
+    width: 600px;
+    height: 320px;
+    background-color: white;
+    background-size:cover;
+    border: 2px solid black;
+    border-radius:10px;
   }
 }
 
