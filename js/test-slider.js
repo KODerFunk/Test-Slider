@@ -2,27 +2,33 @@ var slider = {
   slides: [/*'image/img-1.jpg', 'image/img-2.jpg', 'image/img-3.jpg', 'image/img-4.jpg', 'image/img-5.jpg', 'image/img-6.jpg'*/
     {
       image: 'image/img-1.jpg',
-      color: '40,112,196,1'
+      color: '40,112,196,1',
+      paginationNumber: '0'
     },
     {
       image: 'image/img-2.jpg',
-      color: '75,201,229,1'
+      color: '75,201,229,1',
+      paginationNumber: '1'
     },
     {
       image: 'image/img-3.jpg',
-      color: '71,182,22,1'
+      color: '71,182,22,1',
+      paginationNumber: '2'
     },
     {
       image: 'image/img-4.jpg',
-      color: '255,125,0,1'
+      color: '255,125,0,1',
+      paginationNumber: '3'
     },
     {
       image: 'image/img-5.jpg',
-      color: '227,48,166,1'
+      color: '227,48,166,1',
+      paginationNumber: '4'
     },
     {
       image: 'image/img-6.jpg',
-      color: '40,112,196,1'
+      color: '40,112,196,1',
+      paginationNumber: '5'
     }
   ],
   frame: 0,
@@ -51,4 +57,3 @@ var slider = {
 window.onload = function() {
   slider.init();
 };
-
