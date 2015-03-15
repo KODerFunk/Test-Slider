@@ -3,7 +3,6 @@ var slider = {
   frame: 0,
   set: function(image) {
     document.getElementById('src').style.backgroundImage = 'url('+image+')';
-    document.getElementsByClassName()
   },
   init: function() {
       this.set(this.slides[this.frame]);
