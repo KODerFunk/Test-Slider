@@ -9,22 +9,16 @@
 @import "compass/utilities";
 @import "compass/reset";
 
-
-
 @mixin inner-shadow {
-  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(25,25,25, .2); box-shadow: inset 0px 2px 0px 0px rgba(25,25,25, .2);
-}
-@mixin inner-shadow-bar {
-  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(25,25,25, .2); box-shadow: inset 0px 2px 2px 0px rgba(25,25,25, .2);
-}
-@mixin inner-shadow-active-element {
-  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 2px 0 0 rgba(25, 25, 25, .2);
 }
 
-.link {
-  text-decoration: none;
-  border-bottom: 1px solid #aac0e3;
-  color: #2870c4;
+@mixin inner-shadow-bar {
+  box-shadow: inset 0 2px 2px 0 rgba(25, 25, 25, .2);
+}
+
+@mixin inner-shadow-active-element {
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .slider {
@@ -32,22 +26,22 @@
   margin: 0 auto;
   position: relative;
   font-size: 14px;
-  .pagination-wrap {
+  > .pagination-wrap {
     color: #444;
     margin: 80px auto;
     max-width: 960px;
     position: relative;
     font-family: Arial, sans-serif;
-    .pagination-bar {
+    > .pagination-bar {
       @include inner-shadow-bar;
       background: #f0f0f0;
       border-radius: 15px;
-      height: 15px;
+      height: 10px;
       margin: 0 auto;
       padding: 0;
       position: absolute;
       width: 100%;
-      li {
+      > li {
         display: inline-block;
         margin: 0 180px 0 0;
         padding: 0;
@@ -70,7 +64,7 @@
           height: 40px;
           left: 40%;
           position: absolute;
-          top: -29px;
+          top: -28px;
           width: 40px;
           z-index: 99;
           background: #f0f0f0;
@@ -80,11 +74,11 @@
         &:nth-child(1) {
           &.active {
             .pagination-active-element {
-              background: linear-gradient(to top, rgba(40,112,196,1), rgba(40,112,196,0.7));
+              background: linear-gradient(to top, rgba(40, 112, 196, 1), rgba(40, 112, 196, 0.7));
               @include inner-shadow-active-element;
             }
           }
-          .pagination-active-element{
+          .pagination-active-element {
             &:before {
               content: "1";
             }
@@ -93,11 +87,11 @@
         &:nth-child(2) {
           &.active {
             .pagination-active-element {
-              background: linear-gradient(to top, rgba(75,201,229,1), rgba(75,201,229,0.7));
+              background: linear-gradient(to top, rgba(75, 201, 229, 1), rgba(75, 201, 229, 0.7));
               @include inner-shadow-active-element;
             }
           }
-          .pagination-active-element{
+          .pagination-active-element {
             &:before {
               content: "2";
             }
@@ -106,11 +100,11 @@
         &:nth-child(3) {
           &.active {
             .pagination-active-element {
-              background: linear-gradient(to top, rgba(71,182,22,1), rgba(71,182,22,0.7));
+              background: linear-gradient(to top, rgba(71, 182, 22, 1), rgba(71, 182, 22, 0.7));
               @include inner-shadow-active-element;
             }
           }
-          .pagination-active-element{
+          .pagination-active-element {
             &:before {
               content: "3";
             }
@@ -119,11 +113,11 @@
         &:nth-child(4) {
           &.active {
             .pagination-active-element {
-              background: linear-gradient(to top, rgba(255,125,0,1), rgba(255,125,0,0.7));
+              background: linear-gradient(to top, rgba(255, 125, 0, 1), rgba(255, 125, 0, 0.7));
               @include inner-shadow-active-element;
             }
           }
-          .pagination-active-element{
+          .pagination-active-element {
             &:before {
               content: "4";
             }
@@ -132,11 +126,11 @@
         &:nth-child(5) {
           &.active {
             .pagination-active-element {
-              background: linear-gradient(to top, rgba(227,48,166,1), rgba(227,48,166,0.7));
+              background: linear-gradient(to top, rgba(227, 48, 166, 1), rgba(227, 48, 166, 0.7));
               @include inner-shadow-active-element;
             }
           }
-          .pagination-active-element{
+          .pagination-active-element {
             &:before {
               content: "5";
             }
@@ -145,35 +139,35 @@
         &:nth-child(6) {
           &.active {
             .pagination-active-element {
-              background: linear-gradient(to top, rgba(40,112,196,1), rgba(40,112,196,0.7));
+              background: linear-gradient(to top, rgba(40, 112, 196, 1), rgba(40, 112, 196, 0.7));
               @include inner-shadow-active-element;
             }
           }
-          .pagination-active-element{
+          .pagination-active-element {
             &:before {
               content: "6";
             }
           }
         }
         &:last-child {
-          margin-right: 0;
+          margin-right: -1px;
         }
         &.active {
-          .pagination-active-element {
-            background: linear-gradient(to top, rgba(71,182,22,1), rgba(71,182,22,0.7));
+          > .pagination-active-element {
+            background: linear-gradient(to top, rgba(71, 182, 22, 1), rgba(71, 182, 22, 0.7));
             @include inner-shadow-active-element;
             &:before {
               color: #fff;
             }
           }
         }
-        .pagination-active-element {
+        > .pagination-active-element {
           height: 34px;
           width: 34px;
           background: transparent;
           position: absolute;
           border-radius: 50%;
-          top: -26px;
+          top: -25px;
           z-index: 100;
           left: 3px;
           &:before {
@@ -196,7 +190,7 @@
     top: 150px;
     width: 92px;
     height: 92px;
-    font: 12pt arial,tahoma,sans-serif;
+    font: 12pt arial, tahoma, sans-serif;
     text-align: center;
     border: none;
     background: transparent;
@@ -204,7 +198,7 @@
     box-sizing: border-box;
     cursor: pointer;
     &:hover {
-      box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, .1);
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1);
     }
     &:focus {
       outline: none;
@@ -212,10 +206,26 @@
     &:active {
       background: #f0f0f0;
       border: none;
-      box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, .1);
+      box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, .1);
+      &.left {
+        &:before {
+          top: 6%;
+        }
+        &:after {
+          top: 40%;
+        }
+      }
+      &.right {
+        &:before {
+          top: 6%;
+        }
+        &:after {
+          top: 40%;
+        }
+      }
     }
     &.left {
-      left:0px;
+      left: 0px;
 
       &:before {
         content: '';
@@ -224,7 +234,7 @@
         left: 40%;
         height: 54%;
         width: 6%;
-        background: rgba(71,182,22,1);
+        background: rgba(71, 182, 22, 1);
         -webkit-transform: rotateZ(45deg);
         -moz-transform: rotateZ(45deg);
         -ms-transform: rotateZ(45deg);
@@ -238,7 +248,7 @@
         left: 40%;
         height: 54%;
         width: 6%;
-        background: rgba(71,182,22,1);
+        background: rgba(71, 182, 22, 1);
         -webkit-transform: rotateZ(-45deg);
         -moz-transform: rotateZ(-45deg);
         -ms-transform: rotateZ(-45deg);
@@ -247,7 +257,7 @@
       }
     }
     &.right {
-      right:0px;
+      right: 0px;
 
       &:before {
         content: '';
@@ -256,7 +266,7 @@
         right: 40%;
         height: 54%;
         width: 6%;
-        background: rgba(71,182,22,1);
+        background: rgba(71, 182, 22, 1);
         -webkit-transform: rotateZ(135deg);
         -moz-transform: rotateZ(135deg);
         -ms-transform: rotateZ(135deg);
@@ -270,7 +280,7 @@
         right: 40%;
         height: 54%;
         width: 6%;
-        background: rgba(71,182,22,1);
+        background: rgba(71, 182, 22, 1);
         -webkit-transform: rotateZ(-135deg);
         -moz-transform: rotateZ(-135deg);
         -ms-transform: rotateZ(-135deg);
@@ -280,17 +290,17 @@
     }
   }
   .content {
-    margin:20px auto;
+    margin: 20px auto;
     width: 720px;
     height: 320px;
     position: relative;
     top: 40px;
-    .image {
+    > .image {
       width: 338px;
       height: 338px;
       background-color: white;
-      background-size:cover;
-      border-radius:50%;
+      background-size: cover;
+      border-radius: 50%;
       display: inline-block;
       float: left;
       &:after {
@@ -300,11 +310,11 @@
         left: -5px;
         width: 348px;
         height: 348px;
-        box-shadow: 0px 2px 3px 0px rgba(0,0,0, 0.3);
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
         border-radius: 50%;
       }
     }
-    .text-block {
+    > .text-block {
       display: inline-block;
       width: 380px;
       float: right;
@@ -312,15 +322,20 @@
       top: 35%;
       left: 50%;
       font-family: Verdana, Arial, sans-serif;
-      .title {
+      > .title {
         font-size: 1.714em;
-        color:rgba(71,182,22,1);
+        color: rgba(71, 182, 22, 1);
         margin-bottom: 10px;
       }
-      .text {
+      > .text {
         font-size: 0.929em;
         line-height: 18px;
         margin: 0;
+        > a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
       }
     }
   }
