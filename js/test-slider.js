@@ -28,7 +28,11 @@ var slider = {
   frame: 0,
   set: function(image) {
     document.getElementById('src').style.backgroundImage = 'url('+image+')';
-    document.getElementById('pag'+this.frame).classList.add('active');
+    /*if(document.getElementById('pag'+this.frame).classList.contains('active')){
+      document.getElementById('pag'+this.frame).classList.remove('active');
+    } else {
+      document.getElementById('pag'+this.frame).classList.add('active');
+    }*/
   },
   init: function() {
     this.set(this.slides[this.frame].image);
