@@ -67,14 +67,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 .slider {
   width: 960px;
   margin: 0 auto;
   position: relative;
   font-size: 14px;
 }
-/* line 29, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 .slider > .pagination-wrap {
   color: #444;
   margin: 80px auto;
@@ -82,7 +82,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   font-family: Arial, sans-serif;
 }
-/* line 35, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar {
   box-shadow: inset 0 2px 2px 0 rgba(25, 25, 25, 0.2);
   background: #f0f0f0;
@@ -93,7 +93,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   width: 100%;
 }
-/* line 44, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li {
   display: inline-block;
   margin: 0 180px 0 0;
@@ -106,11 +106,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   cursor: pointer;
 }
-/* line 57, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:hover .pagination-active-element:before {
   color: #333;
 }
-/* line 62, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:before {
   box-shadow: inset 0 2px 0 0 rgba(25, 25, 25, 0.2);
   height: 40px;
@@ -132,65 +132,65 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(1) .pagination-active-element:before {
   content: "1";
 }
-/* line 89, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(2).active .pagination-active-element {
   background: linear-gradient(to top, #4bc9e5, rgba(75, 201, 229, 0.7));
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
-/* line 95, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(2) .pagination-active-element:before {
   content: "2";
 }
-/* line 102, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(3).active .pagination-active-element {
   background: linear-gradient(to top, #47b616, rgba(71, 182, 22, 0.7));
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
-/* line 108, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(3) .pagination-active-element:before {
   content: "3";
 }
-/* line 115, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(4).active .pagination-active-element {
   background: linear-gradient(to top, #ff7d00, rgba(255, 125, 0, 0.7));
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
-/* line 121, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(4) .pagination-active-element:before {
   content: "4";
 }
-/* line 128, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(5).active .pagination-active-element {
   background: linear-gradient(to top, #e330a6, rgba(227, 48, 166, 0.7));
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
-/* line 134, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(5) .pagination-active-element:before {
   content: "5";
 }
-/* line 141, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(6).active .pagination-active-element {
   background: linear-gradient(to top, #2870c4, rgba(40, 112, 196, 0.7));
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
-/* line 147, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:nth-child(6) .pagination-active-element:before {
   content: "6";
 }
-/* line 152, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li:last-child {
   margin-right: -1px;
 }
-/* line 156, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li.active > .pagination-active-element {
   background: linear-gradient(to top, #47b616, rgba(71, 182, 22, 0.7));
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
-/* line 159, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li.active > .pagination-active-element:before {
   color: #fff;
 }
-/* line 164, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li > .pagination-active-element {
   height: 34px;
   width: 34px;
@@ -201,7 +201,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 100;
   left: 3px;
 }
-/* line 173, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .slider > .pagination-wrap > .pagination-bar > li > .pagination-active-element:before {
   content: " ";
   color: #a3a3a3;
@@ -213,7 +213,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 12px;
   position: absolute;
 }
-/* line 188, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .slider .arrow-btn {
   position: absolute;
   top: 150px;
@@ -227,41 +227,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
   cursor: pointer;
 }
-/* line 200, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .slider .arrow-btn:hover {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
-/* line 203, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .slider .arrow-btn:focus {
   outline: none;
 }
-/* line 206, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .slider .arrow-btn:active {
   background: #f0f0f0;
   border: none;
   box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.1);
 }
-/* line 211, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .slider .arrow-btn:active.left:before {
   top: 6%;
 }
-/* line 214, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .slider .arrow-btn:active.left:after {
   top: 40%;
 }
-/* line 219, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .slider .arrow-btn:active.right:before {
   top: 6%;
 }
-/* line 222, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .slider .arrow-btn:active.right:after {
   top: 40%;
 }
-/* line 227, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .slider .arrow-btn.left {
   left: 0px;
 }
-/* line 230, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .slider .arrow-btn.left:before {
   content: '';
   position: absolute;
@@ -270,13 +270,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 54%;
   width: 6%;
   background: #47b616;
-  -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
   -ms-transform: rotateZ(45deg);
-  -o-transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
 }
-/* line 244, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .slider .arrow-btn.left:after {
   content: '';
   position: absolute;
@@ -285,17 +284,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 54%;
   width: 6%;
   background: #47b616;
-  -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
   -ms-transform: rotateZ(-45deg);
-  -o-transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
 }
-/* line 259, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .slider .arrow-btn.right {
   right: 0px;
 }
-/* line 262, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .slider .arrow-btn.right:before {
   content: '';
   position: absolute;
@@ -304,13 +302,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 54%;
   width: 6%;
   background: #47b616;
-  -webkit-transform: rotateZ(135deg);
   -moz-transform: rotateZ(135deg);
   -ms-transform: rotateZ(135deg);
-  -o-transform: rotateZ(135deg);
+  -webkit-transform: rotateZ(135deg);
   transform: rotateZ(135deg);
 }
-/* line 276, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .slider .arrow-btn.right:after {
   content: '';
   position: absolute;
@@ -319,13 +316,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 54%;
   width: 6%;
   background: #47b616;
-  -webkit-transform: rotateZ(-135deg);
   -moz-transform: rotateZ(-135deg);
   -ms-transform: rotateZ(-135deg);
-  -o-transform: rotateZ(-135deg);
+  -webkit-transform: rotateZ(-135deg);
   transform: rotateZ(-135deg);
 }
-/* line 292, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .slider .content {
   margin: 20px auto;
   width: 720px;
@@ -333,7 +329,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   top: 40px;
 }
-/* line 298, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .slider .content > .image {
   width: 338px;
   height: 338px;
@@ -343,7 +339,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: inline-block;
   float: left;
 }
-/* line 306, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .slider .content > .image:after {
   content: " ";
   position: absolute;
@@ -354,7 +350,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 }
-/* line 317, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .slider .content > .text-block {
   display: inline-block;
   width: 380px;
@@ -364,19 +360,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 50%;
   font-family: Verdana, Arial, sans-serif;
 }
-/* line 325, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .slider .content > .text-block > .title {
   font-size: 1.714em;
   color: #47b616;
   margin-bottom: 10px;
 }
-/* line 330, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .slider .content > .text-block > .text {
   font-size: 0.929em;
   line-height: 18px;
   margin: 0;
 }
-/* line 335, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .slider .content > .text-block > .text > a:hover {
   text-decoration: none;
 }
