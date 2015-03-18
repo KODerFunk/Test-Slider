@@ -36,6 +36,14 @@ var slider = {
   },
   init: function() {
     this.set(this.slides[this.frame].image);
+    var _this = this;
+    $('.slider').on('click', '.arrow-btn', function (event) {
+      if ( $(event.currentTarget).hasClass('left') ) {
+        _this.left();
+      } else {
+        _this.right();
+      }
+    });
   },
   left: function() {
     this.frame--;
